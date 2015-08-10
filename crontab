@@ -1,2 +1,5 @@
-*/1 * * * * /var/www/temp.sh 2>/dev/null
+#Grabs temp data every minute
+*/1 * * * * /var/www/cron.sh 2>/dev/null
+
+#Generates png every 3 minutes
 */3 * * * * /var/www/plot.sh > /var/www/graph.png
